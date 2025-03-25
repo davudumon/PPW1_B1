@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 56px;
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 24px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+}
+
+p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+}
+
+:root {
+    --primary-color: #1E90FF;
+    --secondary-color: #FFD700;
+    --text-color: #333;
+    --background-color: #F5F5F5;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 15px 50px;
+    width: 70%;
+    height: 50px;
+    gap: 20px;
+    position: absolute;
+    top: 50px;
+    border-radius: 35px;
+}
+
+header {
+    height: 100px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+.logo {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Libre Baskerville', sans-serif;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.text-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.order-btn {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 94px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    width: 240px;
+    height: 60px;
+}
+
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.welcome-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 50px;
+    height: 504px;
+}
+
+.text-content {
+    width: 50%;
+    padding-right: 20px;
+    text-align: end;
+    margin-right: 20px;
+}
+
+.text-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.video-container {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-section {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 50px 20px;
+    height: 100%;
+}
+
+.menu-section h1 {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 66px;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.menu-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    height: 394px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.menu-image {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.menu-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.menu-card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #555;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.menu-card ul {
+    margin-top: 25px;
+    list-style-type: disc;
+    padding-left: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: start;
+}
+
+.menu-card ul li {
+    font-size: 14px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+.reviews-section {
+    background-color: #0a0a0a;
+    text-align: center;
+    padding: 50px 20px;
+    height: 503px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.reviews-section h1 {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.reviews-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.review-card {
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 15px;
+    width: 240px;
+    height: 240px;
+    text-align: center;
+}
+
+
+.person-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.review-card h2 {
+    font-size: 18px;
+    color: white;
+    margin-top: 22px;
+    margin-bottom: 16px;
+}
+
+.review-card p {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 31px;
+}
+
+.faq-section {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.faq-section h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.faq-answer {
+    font-size: 16px;
+}
+
+.booking-section {
+    background-color: #000;
+    color: white;
+    padding: 40px 20px;
+
+}
+
+.booking-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.booking-text h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.booking-text p {
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.cta-button {
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+
+.footer {
+    background-color: #1E90FF;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 15px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+}
+
+.footer-column p {
+    font-size: 14px;
+    color: black;
+    line-height: 1.5;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.footer-column ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.footer-column ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-family: 'Plus Jakarta Sans';
+}
+
+@media (max-width: 768px) {
+    .menu-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .video-container {
+        width: 300px;
+    }
+
+    .menu-card {
+        width: 40%;
+    }
+
+    .menu-card img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .reviews-section {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reviews-container {
+        gap: 50px;
+    }
+
+    .review-card {
+        display: flex;
+        flex-direction: column;
+        width: 35vh;
+        height: 35vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .review-card img {
+        width: 125px;
+        height: 125px;
+        margin-top: 20px;
+    }
+
+    .review-card p {
+        display: flex;
+        max-width: 200px;
+        text-align: center;
+    }
+
+    .faq-container {
+        display: flex;
+        flex-direction: column;
+        margin: 40px;
+    }
+}
