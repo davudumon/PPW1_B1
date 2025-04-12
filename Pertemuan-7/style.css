@@ -6,6 +6,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--primary-color);
 }
 
 h1 {
@@ -43,20 +48,18 @@ p {
     align-items: center;
     background-color: black;
     padding: 15px 50px;
-    width: 70%;
-    height: 50px;
+    width: 80%;
     gap: 20px;
-    position: absolute;
-    top: 50px;
     border-radius: 35px;
 }
 
 header {
-    height: 100px;
+    height: 25vh;
+    width: auto;
     background-color: var(--primary-color);
     display: flex;
     justify-content: center;
-    height: 100px;
+    align-items: center;
 }
 
 .logo {
@@ -148,7 +151,8 @@ footer {
     background-color: black;
     color: white;
     padding: 50px;
-    height: 504px;
+    width: 100%;
+    height: auto;
 }
 
 .text-content {
@@ -203,7 +207,8 @@ footer {
     border-radius: 10px;
     text-align: left;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    height: 394px;
+    width: 100%;
+    height: auto;
     border-radius: 15px;
     text-align: center;
 }
@@ -248,7 +253,6 @@ footer {
     background-color: #0a0a0a;
     text-align: center;
     padding: 50px 20px;
-    height: 503px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -421,7 +425,36 @@ footer {
     font-family: 'Plus Jakarta Sans';
 }
 
+@media (max-width: 1024px) {
+    .reviews-container {
+        max-width: 700px;
+    }
+
+    .review-card {
+        width: 300px;
+        height: 300px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .welcome-section {
+        flex-direction: column;
+    }
+
+    .text-content {
+        text-align: center;
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
     .menu-container {
         display: flex;
         justify-content: center;
@@ -430,11 +463,12 @@ footer {
     }
 
     .video-container {
-        width: 300px;
+        width: 50%;
     }
 
     .menu-card {
         width: 40%;
+        height: 100%;
     }
 
     .menu-card img {
@@ -444,6 +478,7 @@ footer {
 
     .reviews-section {
         height: 100%;
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
@@ -455,16 +490,20 @@ footer {
     .review-card {
         display: flex;
         flex-direction: column;
-        width: 35vh;
-        height: 35vh;
+        width: 50vh;
+        height: 50vh;
         justify-content: center;
         align-items: center;
     }
 
     .review-card img {
-        width: 125px;
-        height: 125px;
+        width: 100px;
+        height: 100px;
         margin-top: 20px;
+    }
+
+    .review-card h2 {
+        margin: 12px 0 12px 0;
     }
 
     .review-card p {
@@ -477,5 +516,106 @@ footer {
         display: flex;
         flex-direction: column;
         margin: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        width: 90%;
+        margin-top: 100px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links ul {
+        margin-bottom: 100px;
+
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .welcome-section h1 {
+        margin: 0px 20px 20px 20px;
+    }
+
+    .menu-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .menu-card {
+        width: 90%;
+        height: auto;
+    }
+
+    .menu-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .welcome-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .text-content {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .video-container {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .reviews-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .review-card {
+        width: 75vw;
+        height: auto;
+        padding: 20px;
+    }
+
+    .faq-section h1 {
+        margin: 0 20px 20px 20px;
+    }
+
+    .faq-container {
+        margin: 0 20px 20px 20px;
+    }
+
+    .booking-container {
+        flex-direction: column;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
     }
 }
