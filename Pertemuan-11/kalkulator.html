@@ -1,4 +1,56 @@
-<script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            width: auto;
+            justify-content: center;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        button{
+            width: auto;
+            height: auto;
+            min-height: 150px;
+            min-width: 150px;
+            font-size: 60px;
+            padding: 35px;
+
+        }
+
+        .hasil{
+            margin-top: 25px;
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button onclick=inputSatu()>Masukkan bilangan Pertama</button>
+        <button onclick=inputDua()>Masukkan bilangan Kedua</button>
+        <button onclick=tambah()>+</button>
+        <button onclick=kurang()>-</button>
+        <button onclick=kali()>x</button>
+        <button onclick=bagi()>:</button>
+    </div>
+    <div class="hasil" id="hasil">
+
+    </div>
+    <script>
         var hasil = document.getElementById("hasil");
         var bilSatu = 0;
         var bilDua = 0;
@@ -31,3 +83,5 @@
             hasil.innerHTML = "Hasil: " + hasilBagi
         }
     </script>
+</body>
+</html>
