@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick=message()>Klik Aku!</button>
+    <table id="tabel-angka" border="" style="visibility: hidden;">
+        <tr>
+            <th>Bilangan Pertama</th>
+            <th>Bilangan Kedua</th>
+            <th>Hasil Tambah</th>
+        </tr>
+    </table>
+    <script>
+        console.log("Halo aku console log")
+        confirm("Apakah anda yakin?")
+        
+        var tabel = document.getElementById("tabel-angka");
+
+        function message(){
+            if (confirm("Lanjut gak?")){
+                var bilSatu = prompt("Masukkan bilangan pertama!")
+                if (bilSatu){
+                    var bilDua = prompt("Masukkan bilangan kedua!")
+                    if (bilDua) {
+                        var hasilTambah = parseInt(bilSatu) + parseInt(bilDua);
+
+                        tabel.innerHTML += "<tr><td>" + bilSatu + "</td><td>" + bilDua + "</td><td>" + hasilTambah + "</td></tr>" ;
+                        tabel.style.visibility = "visible";
+                    } else {
+                        document.write("Anda gak masukin bil dua")
+                        console.log("Anda gak masukin bil dua")
+                    }
+                } else {
+                    document.write("Anda gak masukin bil pertama")
+                    console.log("Anda gak masukin bil pertama")
+                }
+            } else {
+                document.write("Anda cancel")
+                console.log("Anda cancel")
+            }
+        }
+    </script>
+</body>
+</html>
